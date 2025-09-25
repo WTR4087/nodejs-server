@@ -1,0 +1,12 @@
+４０４エラーページの実装
+fs.readFile('./404.html', (err404, data404) => {
+  res.writeHead(404, {'Content-Type': 'text/html'});
+  res.end(data404);
+});
+
+500エラーページの実装
+fs.readFile('./500.html', (err500, data500) => {
+  res.writeHead(500, {'Content-Type': 'text/html'});
+  res.end(data500);
+});
+
